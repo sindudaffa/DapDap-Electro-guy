@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kartu Nama Interaktif</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      height: 100vh;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(-45deg, #222831, #393E46, #00ADB5, #EEEEEE);
+      background-size: 400% 400%;
+      animation: bgmove 12s ease infinite;
+    }
+
+    @keyframes bgmove {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.95);
+      color: #222831;
+      width: 320px;
+      padding: 2em;
+      border-radius: 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+      text-align: center;
+      transition: 0.4s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    h2 {
+      margin: 0 0 10px 0;
+    }
+
+    .typewriter {
+      display: inline-block;
+      overflow: hidden;
+      border-right: .15em solid #00ADB5;
+      white-space: nowrap;
+      animation: typing 3s steps(40, end), blink .75s step-end infinite;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      0%, 100% { border-color: transparent }
+      50% { border-color: #00ADB5; }
+    }
+
+    .social {
+      margin-top: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      font-size: 1.1em;
+    }
+
+    .social a {
+      text-decoration: none;
+      color: #00ADB5;
+      transition: 0.3s;
+    }
+
+    .social a:hover {
+      transform: scale(1.2);
+      color: #222831;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #00ADB5;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #222831;
+      color: #EEEEEE;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h2>Daffa S.</h2>
+    <div class="typewriter">Electrical Engineering ⚡ | STEI-K ITB 🔵</div>
+    <p>Email: dapdapelectro@.com</p>
+
+    <div class="social">
+      <a href="https://instagram.com/user" target="_blank">📷 Instagram</a>
+      <a href="https://www.linkedin.com/in/user/" target="_blank">💼 LinkedIn</a>
+    </div>
+
+    <a href="#" class="btn">Lihat Portofolio</a>
+  </div>
+</body>
+</html>
